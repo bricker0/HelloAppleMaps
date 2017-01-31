@@ -134,10 +134,12 @@ class ViewController: UIViewController {
    -Navigate to the Storyboard and select the map in the view. Then show the attributes inspector and make sure "User Location" is toggled on. Here you may also wish to change the Type or style of the map. I changed mine to hybrid. See below.
    
      [![screenshot7](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode7.png)](#features)
+   
+   
+You may also find out more information about the objects by clicking the question mark icon to "show quick help inspector". See below
+
      
-     You may also find out more information about the objects by clicking the question mark icon to "show quick help inspector". See below: 
-     
-     [![screenshot9](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode9.png)](#features)
+  [![screenshot9](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode9.png)](#features)
      
    -In the viewcontroller, you now need to import CoreLocation 
    
