@@ -119,7 +119,7 @@ class ViewController: UIViewController {
    We need to call a different framework to access the locational sensors. To add the framework called CoreLocation. Read more about <a href="https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/LocationAwarenessPG/CoreLocation/CoreLocation.html"> Core Location here</a>. 
    Another way to add frameworks to your project is to navigate to the general overview page associated with your project, have it highlighted, select target, general and then scroll down. Where it says "Linked Frameworks and Libraries" click the + symbol and search for the CoreLocation framework to then add it. See screenshot below. Again, make sure all of the correct selections are made to navigate to this window.
    
-   [![screenshot6](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode6.png)](#features)
+   [![screenshot6](https://github.com/bricker0/HelloAppleMaps/blob/master/Xcode6.png)](#features)
    
    We want to add a button for the user to touch that will then ask them if it is alright to find their location, and when they agree it will put them in the center of the map.
    
@@ -134,6 +134,11 @@ class ViewController: UIViewController {
    -Navigate to the Storyboard and select the map in the view. Then show the attributes inspector and make sure "User Location" is toggled on. Here you may also wish to change the Type or style of the map. I changed mine to hybrid. See below.
    
      [![screenshot7](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode7.png)](#features)
+     
+     You may also find out more information about the objects by clicking the question mark icon to "show quick help inspector". See below: 
+     
+     [![screenshot9](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode9.png)](#features)
+     
    -In the viewcontroller, you now need to import CoreLocation 
    
    Not written by Britta Below this point
