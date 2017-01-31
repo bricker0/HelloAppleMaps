@@ -2,7 +2,7 @@
 
 # Hello Apple Maps and Location
 
-This example was written by Dr. Ricker, for students in the <a href="http://www.tacoma.uw.edu/urban-studies/ms-program-overview">Masters of Geospatial Technologies at the University of Washington Tacoma</a>. To complete this example you will need a Mac with XCode installed. 
+This example was written by Dr. Ricker, for students in the <a href="http://www.tacoma.uw.edu/urban-studies/ms-program-overview">Masters of Geospatial Technologies at the University of Washington Tacoma</a>. To complete this example you will need a Mac with XCode installed. This tutorial is written for traditional GIS analyst interested in building location based services using Swift and XCode for iOS.
 
 For this assignment, Lab 4 for the course titled Mobile GIS offered during the Winter of 2017, we build a native iOS application. To achieve this aim, we will be learning how to navigate XCode, basics of Swift, and we will quickly create a generic location based service! This example walks you through how to create an app that puts a point on the map based on the user's current location. This example assumes you have never used XCode, you know little to know programming and **you are ready to rock**!
 
@@ -65,18 +65,51 @@ I recommend using view called "Show Assistant Editor" and then you can see your 
 [![screenshot3](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode3.png)](#features)
 
 11. In the ViewController.swift document add the following:
-Under import UIKIT add
+Under import UIKit add
 
 ```markdown
-import UIMapKit
+import MapKit
 ```
-Then delet the following: 
+Then delete the following: 
 
 ```markdown
  override internal func viewDidLoad()
 
     override internal func didReceiveMemoryWarning()
     ```
+This will introduce an error since we haven't added the UIMapKit framework to our project yet!
+  
+To do this, using the project navigator, the pane on the far left (think of the table of contents in ArcGIS) we need to navigate to the project file, then select "Capabilities" and toggle on maps. Notice all of the things toggled in blue to get to this screen. Once you toggle Maps on, this will link the MapKit.framework to your project, meaning it will call Apple Maps!
+
+[![screenshot4](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode4.png)](#features)
+
+12. Click Save. Now, your bug should be gone! 
+
+When you navigate to the folder called "Frameworks" in Project Navigator, you should see a little suitcase with MapKit.framework
+This isn't enough though, we still need to make our outlet. To do this...
+
+13. In the IB select the map box and hold down control and drag your curser to where you want to connect your IBOulet. In the popup window enter the name of the object, which I named map.
+Leave the rest as default. You will see the storage is "Weak" meaning that when you close the app, the map will stop.
+14. Click connect and then your code should autogenerate. 
+
+[![screenshot5](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode5.png)](#features)
+
+If you did this succesfully your code should now look like this under the import MapKit
+  ```markdown
+class ViewController: UIViewController {
+    @IBOutlet weak var map: MKMapView!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+
+
+   ```
+   You should now be ready to run your first map app! If you see any red warnings, click on them to see what might be wrong. 
+   If you see no warnings, click Run and see what happens! 
+   
+   Not written by Britta Below this point
 ```markdown
 
 Syntax highlighted code block
