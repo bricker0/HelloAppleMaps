@@ -17,15 +17,15 @@ There are a number of questions posed in this example - for full credit - please
 
 Assuming XCode is installed, 
 
-1. Open XCode 
-2. Click "Create a new Xcode project"
-3. Select "Single View Application" and click "Next"
-4. In the Product Name field "YOURLASTNAME_Lab4_2017" and leave the rest of the fields as default. 
--This means that the Language you will be programming in is Swift, and your target device is the iPhone. 
--If you pick universal - it will work on iPad or iPhone but this is more work. You can do that later if you would like. 
--Let's keep it simple for now. 
+- Open XCode 
+- Click "Create a new Xcode project"
+- Select "Single View Application" and click "Next"
+- In the Product Name field "YOURLASTNAME_Lab4_2017" and leave the rest of the fields as default. 
+This means that the Language you will be programming in is Swift, and your target device is the iPhone. 
+If you pick universal - it will work on iPad or iPhone but this is more work. You can do that later if you would like. 
+Let's keep it simple for now. 
 
-5. Now click Next 
+- Now click Next 
 - Navigate to the local repository you plan to save your work and click "Create" 
 - Note: If you are using MacBooks that belong to the department, do not forget to **backup your work on an external drive** or upload directly to GitHub regularily as to not loose your work!!
 
@@ -83,12 +83,12 @@ To do this, using the project navigator, the pane on the far left (think of the 
 
 [![screenshot4](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode4.png)](#features)
 
-12. Click Save. Now, your bug should be gone! 
+- Click Save. Now, your bug should be gone! 
 
 When you navigate to the folder called "Frameworks" in Project Navigator, you should see a little suitcase with MapKit.framework
 This isn't enough though, we still need to make our outlet. To do this...
 
-- In the IB select the map box and hold down control and drag your curser to where you want to connect your IBOulet. In the popup window enter the name of the object, which I named map.
+- In the IB select the map box and hold down control and drag your cursor to where you want to connect your IBOulet. In the popup window enter the name of the object, which I named map.
 
 Leave the rest as default. You will see the storage is "Weak" meaning that when you close the app, the map will stop.
 
@@ -96,8 +96,7 @@ Leave the rest as default. You will see the storage is "Weak" meaning that when 
 
 [![screenshot5](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode5.png)](#features)
 
-If you did this succesfully your code should now look like this under the import MapKit
-
+If you did this successfully your code should now look like this under the import MapKit.
 
   ```markdown
 class ViewController: UIViewController {
@@ -111,6 +110,31 @@ class ViewController: UIViewController {
    ```
    You should now be ready to run your first map app! If you see any red warnings, click on them to see what might be wrong. 
    If you see no warnings, click Run and see what happens! 
+   
+   ##Question 3 Screenshot of working map app on the emulator. 
+   
+   # Finding the users location with CoreLocation
+   
+   Next, we want to present the user with an egocentric view, meaning we want to put them in the center of the map. 
+   We need to call a different framework to access the locational sensors. To add the framework called CoreLocation. Read more about <a href="https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/LocationAwarenessPG/CoreLocation/CoreLocation.html"> Core Location here</a>. 
+   Another way to add frameworks to your project is to navigate to the general overview page associated with your project, have it highlighted, select target, general and then scroll down. Where it says "Linked Frameworks and Libraries" click the + symbol and search for the CoreLocation framework to then add it. See screenshot below. Again, make sure all of the correct selections are made to navigate to this window.
+   
+   [![screenshot6](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode6.png)](#features)
+   
+   We want to add a button for the user to touch that will then ask them if it is alright to find their location, and when they agree it will put them in the center of the map.
+   
+   -Navigate to the Storyboard and in the Object Library, select "Flexible Space Bar Button Item" and drag it to the bottom of the view. This will create an area to place your buttons.
+   
+   -Next,add a Bar Button Item (notice they snap to a side) and set its title to Location
+   
+   -Add another Bar button Item and in the Show Attributes Inspector next to System Item use the drop down and select Search. This will change the icon.
+   [![screenshot8](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode8.png)](#features)
+   
+   
+   -Navigate to the Storyboard and select the map in the view. Then show the attributes inspector and make sure "User Location" is toggled on. Here you may also wish to change the Type or style of the map. I changed mine to hybrid. See below.
+   
+     [![screenshot7](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode7.png)](#features)
+   -In the viewcontroller, you now need to import CoreLocation 
    
    Not written by Britta Below this point
 ```markdown
