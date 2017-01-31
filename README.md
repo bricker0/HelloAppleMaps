@@ -1,5 +1,3 @@
-# HelloAppleMaps
-
 # Hello Apple Maps and Location
 
 This example was written by Dr. Ricker, for students in the <a href="http://www.tacoma.uw.edu/urban-studies/ms-program-overview">Masters of Geospatial Technologies at the University of Washington Tacoma</a>. To complete this example you will need a Mac with XCode installed. This tutorial is written for traditional GIS analyst interested in building location based services using Swift and XCode for iOS.
@@ -28,10 +26,10 @@ Assuming XCode is installed,
 -Let's keep it simple for now. 
 
 5. Now click Next 
-6. Navigate to the local repository you plan to save your work and click "Create" 
--Note: If you are using MacBooks that belong to the department, do not forget to **backup your work on an external drive** or upload directly to GitHub regularily as to not loose your work!!
+- Navigate to the local repository you plan to save your work and click "Create" 
+- Note: If you are using MacBooks that belong to the department, do not forget to **backup your work on an external drive** or upload directly to GitHub regularily as to not loose your work!!
 
-7. The Xcode interface will now be open.
+- The Xcode interface will now be open.
 
 [![screenshot](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode1.png)](#features)
 
@@ -69,14 +67,16 @@ Under import UIKit add
 
 ```markdown
 import MapKit
+
 ```
-Then delete the following: 
+Now delete the following 
 
 ```markdown
  override internal func viewDidLoad()
 
     override internal func didReceiveMemoryWarning()
-    ```
+  
+  ```
 This will introduce an error since we haven't added the UIMapKit framework to our project yet!
   
 To do this, using the project navigator, the pane on the far left (think of the table of contents in ArcGIS) we need to navigate to the project file, then select "Capabilities" and toggle on maps. Notice all of the things toggled in blue to get to this screen. Once you toggle Maps on, this will link the MapKit.framework to your project, meaning it will call Apple Maps!
@@ -95,6 +95,8 @@ Leave the rest as default. You will see the storage is "Weak" meaning that when 
 [![screenshot5](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode5.png)](#features)
 
 If you did this succesfully your code should now look like this under the import MapKit
+
+
   ```markdown
 class ViewController: UIViewController {
     @IBOutlet weak var map: MKMapView!
@@ -103,7 +105,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
 
    ```
    You should now be ready to run your first map app! If you see any red warnings, click on them to see what might be wrong. 
