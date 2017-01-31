@@ -37,13 +37,13 @@ Assuming XCode is installed,
 
 When I am building an app for the first time, I want instant gratification. For this reason, let's go straight to the interface builder. With interface builder (IB) is called the "Storyboard" (I will use storyboard and IB interchangably) you can start designing the user interface (UI) the end user will interact with. To navigate to the IB...
 
-8. Click Main.storyboard file in Project navigator on the left 
+- Click Main.storyboard file in Project navigator on the left 
 
 This will load the IB with the View Controller. In the view controller, we will place objects like maps for the end user to interact with. In the Object library on the right, select "Label" and then drag and drop a label into your view controller storyboard interface. Then change the label by clicking on it. Please give it a title with something descriptive like "First Map"
 
 [![screenshot2](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode2.png)](#features)
 
-9. Change the style of the label
+- Change the style of the label
 Click "Show Attributes Inspector" in the top right and you can change the style and color of your text. Click the ruler icon to "Show Size Inspector" which is part of the responsive design. We will not go into much detail about this here, but if you "lock" an object to the sides of the interface, it will remain relative to the sides of the interface you tell it to snap to, if not when the screen is oriented certain directions an object might not be visible.
 
 ###Test your app###
@@ -51,7 +51,7 @@ Now click play and test your app on the emulator. Then use the emulator to see i
 
 ##Question 2. Provide a screenshot of your app working in the emulator and rotated. 
 
-10. Now, since we care about maps and location, **let's add a map!**
+- Now, since we care about maps and location, **let's add a map!**
 In the objects library on the bottom right, in the "filter" box, type "map" and then the only object in the library will be "Map Kit View". Drag that into your View Controller in storyboard. Then resize the box to make it as big as possible and fit in the view. We love maps, we want them to be big!
 
 After you add ojects to the View controller, you will need connect an IBOutlet to tell the View Controller what to do with the object in the ViewController.swift file. 
@@ -62,7 +62,7 @@ There are a number of ways to do this.
 I recommend using view called "Show Assistant Editor" and then you can see your storyboard and your viewcontroller.swift file at the same time. XCode has some drag and drop functionality that makes programming pretty awesome and easy. Here is what the Assistant Editor view will look like. 
 [![screenshot3](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode3.png)](#features)
 
-11. In the ViewController.swift document add the following:
+- In the ViewController.swift document add the following:
 Under import UIKit add
 
 ```markdown
@@ -88,9 +88,11 @@ To do this, using the project navigator, the pane on the far left (think of the 
 When you navigate to the folder called "Frameworks" in Project Navigator, you should see a little suitcase with MapKit.framework
 This isn't enough though, we still need to make our outlet. To do this...
 
-13. In the IB select the map box and hold down control and drag your curser to where you want to connect your IBOulet. In the popup window enter the name of the object, which I named map.
+- In the IB select the map box and hold down control and drag your curser to where you want to connect your IBOulet. In the popup window enter the name of the object, which I named map.
+
 Leave the rest as default. You will see the storage is "Weak" meaning that when you close the app, the map will stop.
-14. Click connect and then your code should autogenerate. 
+
+-  Click connect and then your code should autogenerate. 
 
 [![screenshot5](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode5.png)](#features)
 
