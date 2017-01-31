@@ -47,6 +47,7 @@ Click "Show Attributes Inspector" in the top right and you can change the style 
 
 
 Now, since we care about maps and location, 
+```markdown
 10. Change the style of the label **let's add a map!**
 In the objects library on the bottom right, in the "filter" box, type "map" and then the only object in the library will be "Map Kit View". Drag that into your View Controller in storyboard. Then resize the box to make it as big as possible and fit in the view. We love maps, we want them to be big!
 
