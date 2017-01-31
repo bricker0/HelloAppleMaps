@@ -28,9 +28,31 @@ Assuming XCode is installed,
 -Let's keep it simple for now. 
 5. Now click Next 
 6. Navigate to the local repository you plan to save your work and click "Create" 
-7. The Xcode interface will now be open.asdf
+-Note: If you are using MacBooks that belong to the department, do not forget to **backup your work on an external drive** or upload directly to GitHub regularily as to not loose your work!!
+7. The Xcode interface will now be open.
 
-[![britta](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode1.png)](#features)
+[![screenshot](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode1.png)](#features)
+
+## Question 1. What are the default device orientations that are selected? What does this do or enable? 
+
+When I am building an app for the first time, I want instant gratification. For this reason, let's go straight to the interface builder. With interface builder (IB) is called the "Storyboard" (I will use storyboard and IB interchangably) you can start designing the user interface (UI) the end user will interact with. To navigate to the IB...
+
+8. Click Main.storyboard file in Project navigator on the left 
+This will load the IB with the View Controller. In the view controller, we will place objects like maps for the end user to interact with. In the Object library on the right, select "Label" and then drag and drop a label into your view controller storyboard interface. Then change the label by clicking on it. Please give it a title with something descriptive like "First Map"
+
+[![screenshot2](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode2.png)](#features)
+
+9. Change the style of the label
+Click "Show Attributes Inspector" in the top right and you can change the style and color of your text. Click the ruler icon to "Show Size Inspector" which is part of the responsive design. We will not go into much detail about this here, but if you "lock" an object to the sides of the interface, it will remain relative to the sides of the interface you tell it to snap to, if not when the screen is oriented certain directions an object might not be visible.
+
+
+Now, since we care about maps and location, 
+10. Change the style of the label **let's add a map!**
+In the objects library on the bottom right, in the "filter" box, type "map" and then the only object in the library will be "Map Kit View". Drag that into your View Controller in storyboard. Then resize the box to make it as big as possible and fit in the view. We love maps, we want them to be big!
+
+After you add ojects to the View controller, you will need connect an IBOutlet to tell the View Controller what to do with the object in the ViewController.swift file. 
+
+"An object of the UIViewController class (and its subclasses) comes with a set of methods that manage its view hierarchy. iOS automatically calls these methods at appropriate times when a view controller transitions between states. When you create a view controller subclass (like the ViewController class you’ve been working with), it inherits the methods defined in UIViewController and lets you add your own custom behavior for each method." <a href="https://developer.apple.com/library/content/referencelibrary/GettingStarted/DevelopiOSAppsSwift/WorkWithViewControllers.html">From this Apple Tutorial</a>about view controllers.
 
 
 ```markdown
