@@ -28,9 +28,10 @@ Assuming XCode is installed,
 -Let's keep it simple for now. 
 5. Now click Next 
 6. Navigate to the local repository you plan to save your work and click "Create" 
-7. The Xcode interface will now be open
+7. The Xcode interface will now be open.asdf
 
-
+[![solarized dualmode](https://github.com/altercation/solarized/raw/master/img/solarized-yinyang.png)](#features)
+(https://github.com/bricker0/HelloAppleMaps/edit/master/blob/master/xcode1.png)
 
 ```markdown
 Syntax highlighted code block
