@@ -30,7 +30,7 @@ Assuming XCode is installed,
 6. Navigate to the local repository you plan to save your work and click "Create" 
 7. The Xcode interface will now be open.asdf
 
-[![britta](https://github.com/bricker0/HelloAppleMaps/edit/master/blob/master/xcode1.png)](#features)
+[![britta](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode1.png)](#features)
 
 
 ```markdown
