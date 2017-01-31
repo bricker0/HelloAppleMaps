@@ -20,11 +20,18 @@ There are a number of questions posed in this example - for full credit - please
 Assuming XCode is installed, 
 
 1. Open XCode 
-2. Click "Start a New XCode Project"
+2. Click "Create a new Xcode project"
 3. Select "Single View Application" and click "Next"
 4. In the Product Name field "YOURLASTNAME_Lab4_2017" and leave the rest of the fields as default. 
--This means that the Language you will be programming in is Swift, and your target device is the iPhone. If you pick universal - it will work on iPad or iPhone but this is more work. You can do that later if you would like. Let's keep is simple now. 
+-This means that the Language you will be programming in is Swift, and your target device is the iPhone. 
+-If you pick universal - it will work on iPad or iPhone but this is more work. You can do that later if you would like. 
+-Let's keep it simple for now. 
 5. Now click Next 
+6. Navigate to the local repository you plan to save your work and click "Create" 
+7. The Xcode interface will now be open
+
+
+
 ```markdown
 Syntax highlighted code block
 
