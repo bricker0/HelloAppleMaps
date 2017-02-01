@@ -62,7 +62,8 @@ There are a number of ways to do this.
 I recommend using view called "Show Assistant Editor" and then you can see your storyboard and your viewcontroller.swift file at the same time. XCode has some drag and drop functionality that makes programming pretty awesome and easy. Here is what the Assistant Editor view will look like. 
 [![screenshot3](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode3.png)](#features)
 
-- In the ViewController.swift document add the following:
+- In the ViewController.swift document add the following
+
 Under import UIKit add
 
 ```markdown
@@ -84,6 +85,10 @@ To do this, using the project navigator, the pane on the far left (think of the 
 [![screenshot4](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode4.png)](#features)
 
 - Click Save. Now, your bug should be gone! 
+
+Another way to add frameworks to your project is to navigate to the general overview page associated with your project, have it highlighted, select target, general and then scroll down. Where it says "Linked Frameworks and Libraries" click the + symbol and search for the CoreLocation framework to then add it. See screenshot below. Again, make sure all of the correct selections are made to navigate to this window.
+   
+  [![screenshot6](https://github.com/bricker0/HelloAppleMaps/blob/master/Xcode6.png)](#features)
 
 When you navigate to the folder called "Frameworks" in Project Navigator, you should see a little suitcase with MapKit.framework
 This isn't enough though, we still need to make our outlet. To do this...
@@ -113,62 +118,4 @@ class ViewController: UIViewController {
    
    ##Question 3 Screenshot of working map app on the emulator. 
    
-   # Finding the users location with CoreLocation
-   
-   Next, we want to present the user with an egocentric view, meaning we want to put them in the center of the map. 
-   We need to call a different framework to access the locational sensors. To add the framework called CoreLocation. Read more about <a href="https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/LocationAwarenessPG/CoreLocation/CoreLocation.html"> Core Location here</a>. 
-   Another way to add frameworks to your project is to navigate to the general overview page associated with your project, have it highlighted, select target, general and then scroll down. Where it says "Linked Frameworks and Libraries" click the + symbol and search for the CoreLocation framework to then add it. See screenshot below. Again, make sure all of the correct selections are made to navigate to this window.
-   
-   [![screenshot6](https://github.com/bricker0/HelloAppleMaps/blob/master/Xcode6.png)](#features)
-   
-   We want to add a button for the user to touch that will then ask them if it is alright to find their location, and when they agree it will put them in the center of the map.
-   
-   -Navigate to the Storyboard and in the Object Library, select "Flexible Space Bar Button Item" and drag it to the bottom of the view. This will create an area to place your buttons.
-   
-   -Next,add a Bar Button Item (notice they snap to a side) and set its title to Location
-   
-   -Add another Bar button Item and in the Show Attributes Inspector next to System Item use the drop down and select Search. This will change the icon.
-   [![screenshot8](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode8.png)](#features)
-   
-   
-   -Navigate to the Storyboard and select the map in the view. Then show the attributes inspector and make sure "User Location" is toggled on. Here you may also wish to change the Type or style of the map. I changed mine to hybrid. See below.
-   
-     [![screenshot7](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode7.png)](#features)
-   
-   
-You may also find out more information about the objects by clicking the question mark icon to "show quick help inspector". See below
-
-     
-  [![screenshot9](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode9.png)](#features)
-     
-   -In the viewcontroller, you now need to import CoreLocation 
-   
-   Not written by Britta Below this point
-```markdown
-
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/UWTMGIS/GIS504_W17/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+  
