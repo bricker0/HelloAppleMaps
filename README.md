@@ -31,7 +31,7 @@ Let's keep it simple for now.
 
 - The Xcode interface will now be open.
 
-[![screenshot](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode1.png)](#features)
+[![screenshot](https://github.com/bricker0/HelloAppleMaps/blob/master/img/xcode1.png)](#features)
 
 ## Question 1. What are the default device orientations that are selected? What does this do or enable? 
 
