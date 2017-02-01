@@ -41,7 +41,7 @@ When I am building an app for the first time, I want instant gratification. For 
 
 This will load the IB with the View Controller. In the view controller, we will place objects like maps for the end user to interact with. In the Object library on the right, select "Label" and then drag and drop a label into your view controller storyboard interface. Then change the label by clicking on it. Please give it a title with something descriptive like "First Map"
 
-[![screenshot2](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode2.png)](#features)
+[![screenshot2](https://github.com/bricker0/HelloAppleMaps/blob/master/img/xcode2.png)](#features)
 
 - Change the style of the label
 Click "Show Attributes Inspector" in the top right and you can change the style and color of your text. Click the ruler icon to "Show Size Inspector" which is part of the responsive design. We will not go into much detail about this here, but if you "lock" an object to the sides of the interface, it will remain relative to the sides of the interface you tell it to snap to, if not when the screen is oriented certain directions an object might not be visible.
@@ -82,13 +82,13 @@ This will introduce an error since we haven't added the UIMapKit framework to ou
   
 To do this, using the project navigator, the pane on the far left (think of the table of contents in ArcGIS) we need to navigate to the project file, then select "Capabilities" and toggle on maps. Notice all of the things toggled in blue to get to this screen. Once you toggle Maps on, this will link the MapKit.framework to your project, meaning it will call Apple Maps!
 
-[![screenshot4](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode4.png)](#features)
+[![screenshot4](https://github.com/bricker0/HelloAppleMaps/blob/master/img/xcode4.png)](#features)
 
 - Click Save. Now, your bug should be gone! 
 
 Another way to add frameworks to your project is to navigate to the general overview page associated with your project, have it highlighted, select target, general and then scroll down. Where it says "Linked Frameworks and Libraries" click the + symbol and search for the CoreLocation framework to then add it. See screenshot below. Again, make sure all of the correct selections are made to navigate to this window.
    
-  [![screenshot6](https://github.com/bricker0/HelloAppleMaps/blob/master/Xcode6.png)](#features)
+  [![screenshot6](https://github.com/bricker0/HelloAppleMaps/blob/master/img/Xcode6.png)](#features)
 
 When you navigate to the folder called "Frameworks" in Project Navigator, you should see a little suitcase with MapKit.framework
 This isn't enough though, we still need to make our outlet. To do this...
@@ -99,7 +99,7 @@ Leave the rest as default. You will see the storage is "Weak" meaning that when 
 
 -  Click connect and then your code should autogenerate. 
 
-[![screenshot5](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode5.png)](#features)
+[![screenshot5](https://github.com/bricker0/HelloAppleMaps/blob/master/img/xcode5.png)](#features)
 
 If you did this successfully your code should now look like this under the import MapKit.
 
@@ -119,8 +119,8 @@ class ViewController: UIViewController {
    You may notice the map is using default settings which are not the best, you can alter the map functionality, in interface builder, select the map in the view controller then select inspector and toggle the map functionality you wish to share with your end users. 
 
    
-   [![screenshot7](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode7.png)](#features)
+   [![screenshot7](https://github.com/bricker0/HelloAppleMaps/blob/master/img/xcode7.png)](#features)
  
- #Question 3 Screenshot of working map app on the emulator showing a non-default map.  
+ 
    
   
