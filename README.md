@@ -116,7 +116,11 @@ class ViewController: UIViewController {
    You should now be ready to run your first map app! If you see any red warnings, click on them to see what might be wrong. 
    If you see no warnings, click Run and see what happens! 
    
+   You may notice the map is using default settings which are not the best, you can alter the map functionality, in interface builder, select the map in the view controller then select inspector and toggle the map functionality you wish to share with your end users. 
+
+   
+   [![screenshot7](https://github.com/bricker0/HelloAppleMaps/blob/master/xcode7.png)](#features)
  
- ##Question 3 Screenshot of working map app on the emulator.  
+ #Question 3 Screenshot of working map app on the emulator showing a non-default map.  
    
   
