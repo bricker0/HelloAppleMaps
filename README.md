@@ -116,6 +116,7 @@ class ViewController: UIViewController {
    You should now be ready to run your first map app! If you see any red warnings, click on them to see what might be wrong. 
    If you see no warnings, click Run and see what happens! 
    
- ##Question 3 Screenshot of working map app on the emulator. ##
+ 
+ ##Question 3 Screenshot of working map app on the emulator.  
    
   
