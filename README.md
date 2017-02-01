@@ -1,8 +1,8 @@
-# Hello Apple Maps and Location
+# Hello Apple Maps 
 
 This example was written by Dr. Ricker, for students in the <a href="http://www.tacoma.uw.edu/urban-studies/ms-program-overview">Masters of Geospatial Technologies at the University of Washington Tacoma</a>. To complete this example you will need a Mac with XCode installed. This tutorial is written for traditional GIS analyst interested in building location based services using Swift and XCode for iOS.
 
-For this assignment, Lab 4 for the course titled Mobile GIS offered during the Winter of 2017, we build a native iOS application. To achieve this aim, we will be learning how to navigate XCode, basics of Swift, and we will quickly create a generic location based service! This example walks you through how to create an app that puts a point on the map based on the user's current location. This example assumes you have never used XCode, you know little to know programming and **you are ready to rock**!
+For this assignment, Lab 4 for the course titled Mobile GIS offered during the Winter of 2017, we build a native iOS application. To achieve this aim, we will be learning how to navigate XCode, basics of Swift, and we will add a map to our app! This example walks you through how to add a title and a map to your user interface. This example assumes you have never used XCode, you know little to know programming and **you are ready to rock**!
 
 If you are interested in reading more about swift here is <a href="https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/index.html#//apple_ref/doc/uid/TP40014097-CH3-ID0">information about Swift straight from Apple.</a> In this tutorial, I will be teaching you to use <a href="https://developer.apple.com/reference/mapkit">MapKit Framework</a> and the<a href="https://developer.apple.com/reference/corelocation"> CoreLocation Framework</a>. MapKit displays a map an annotation for the end user while CoreLocation taps into the sensors in the iOS device to find the users location. Used together, you can offer information to the end user based on their current location. 
 
@@ -116,6 +116,6 @@ class ViewController: UIViewController {
    You should now be ready to run your first map app! If you see any red warnings, click on them to see what might be wrong. 
    If you see no warnings, click Run and see what happens! 
    
-   ##Question 3 Screenshot of working map app on the emulator. 
+ ##Question 3 Screenshot of working map app on the emulator. ##
    
   
